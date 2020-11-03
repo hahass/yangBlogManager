@@ -7,7 +7,7 @@
     "build": "rimraf source/dist && parcel build source-src/main.js -d source/dist --no-source-maps",
     "postinstall": "node ./move_config.js"
   },
-  "source": "source-src/main.js",
+  "source": "source-src1/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Shen-Yu/hexo-theme-ayer.git"
