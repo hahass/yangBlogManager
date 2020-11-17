@@ -103,6 +103,15 @@ hexo server # 启动本地WEB服务器，简写做hexo s
 
 hexo clean "&&" hexo deploy 
 
+hexo clean "&&" hexo generate "&&" hexo deploy 
+
+
+## 访问地址
+
+```
+https://hhass.gitee.io
+```
+
 
 
 

@@ -120,8 +120,5 @@ var searchFunc = function (path, search_id, content_id) {
       });
     }
   });
-  $(document).on('click', '#local-search-close', function () {
-    $('#local-search-input').val('');
-    $('#local-search-result').html('');
-  });
+
 };
