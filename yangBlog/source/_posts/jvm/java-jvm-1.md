@@ -110,6 +110,15 @@ java堆用于存储对象实例，只要不断创建对象，并且保证 GC Roo
 -XX:MaxPermSize设置永久代最大空间大小。
 
 -Xss设置每个线程的堆栈大小。
+
+-XX:MetaSpaceSize: 设置元空间大小
+
+-XX:+PrintGCDetails: 打印GC详细日志
+
+-XX:SurvivorRatio: 设置新生代中Eden区和s0、s1的大小占比，默认-XX:SurvivorRatio=8,Eden:s0:s1=8:1:1
+
+-XX:MaxTenuringThreshold: 设置进入老年代的年龄
+
 ```
 没有直接设置老年代的参数，但是可以设置堆空间大小和新生代空间大小两个参数来间接控制。
 
