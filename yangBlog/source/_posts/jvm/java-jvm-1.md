@@ -119,6 +119,17 @@ java堆用于存储对象实例，只要不断创建对象，并且保证 GC Roo
 
 -XX:MaxTenuringThreshold: 设置进入老年代的年龄
 
+-XX:+DisableExplicitGC。这个参数的意思就是禁止显式执行GC，不允许你来通过代码触发GC
+
+
+-XX:CMSFullGCsBeforeCompaction=5 设置FULL GC多少次之后进行内存整理
+
+-XX:+HeapDumpOnOutOfMemoryError 内存溢出自动dump
+-XX:HeapDumpPath=./ dump路径
+-Xloggc:gc.log  打印GC日志
+-XX:+PrintGCDetails  打印GC日志细节
+-XX:+UseParNewGC  使用parNew垃圾收集器
+-XX:+UseConcMarkSweepGC 使用CMS垃圾收集器
 ```
 没有直接设置老年代的参数，但是可以设置堆空间大小和新生代空间大小两个参数来间接控制。
 

@@ -44,3 +44,7 @@ Thread thread = new Thread(() -> System.out.println("执行线程方法"));
    AddInterface addInterface = (a,b) -> a-b;
 ```
 
+
+### lambda表达式
+
+使用lambda表达式时，java在进行编译的使用，不会像匿名内部类那样生成新的类文件，而是作为主类的私用方法
